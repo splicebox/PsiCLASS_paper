@@ -8,7 +8,7 @@ Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increas
 	Copyright (C) 2018- and GNU GPL by Li Song, Liliana Florea
 
 
-# Commands of running different tools:
+## Commands of running different tools:
 PsiCLASS: Assume the bam files are in the file "bamlist"
 
 	psiclass.pl --lb bamlist
@@ -26,8 +26,8 @@ StringTie-merge (v1.3.3b)
 TACO (v)
 
 
-# Commands related to simulated data set
+## Commands related to simulated data set
 
-## Generate the simulated data with Polyester
+### Generate the simulated data with Polyester
 
-## Categorize the transcripts based on expression level
+### Categorize the transcripts based on expression level
