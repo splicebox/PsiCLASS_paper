@@ -1,0 +1,14 @@
+PsiCLASS_paper
+=======
+
+The scripts and commands used in the manuscript:
+
+Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increases the accuracy of transcript assembly, *Submitted*.
+
+	Copyright (C) 2018- and GNU GPL by Li Song, Liliana Florea
+
+
+### Commands of running different tools:
+
+PsiCLASS:
+
