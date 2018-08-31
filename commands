@@ -1,0 +1,3 @@
+
+# compare the change of genome coverage.
+paste class_01_chr2.recall classes_sample_0.recall | awk '{print $7-$3}'
