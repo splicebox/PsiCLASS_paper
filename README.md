@@ -30,6 +30,8 @@ TACO (v0.7.3): Assume the gtf files are listed in the file "gtflist"
 	python taco_run.py -o taco_out gtflist
 	perl SortGTFByTid.pl taco_out/assembly.gtf > taco_out.gtf
 
+The evaluation scripts for each data set is in the bash file evaluation_${dataset}.sh
+
 ## Commands related to simulated data set
 
 ### Generate the simulated data with Polyester
