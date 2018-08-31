@@ -9,9 +9,9 @@ Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increas
 
 
 ## Commands of running different tools:
-PsiCLASS: Assume the bam files are in the file "bamlist"
+PsiCLASS: Assume the bam files are listed in the file "bamlist"
 
-	psiclass.pl --lb bamlist
+	psiclass --lb bamlist
 
 StringTie (v1.3.3b):
 
@@ -21,10 +21,14 @@ Scallop (v0.10.2):
 
 	scallop -i ${bamfile} -o scallop_out.gtf
 
-StringTie-merge (v1.3.3b)
+StringTie-merge (v1.3.3b): Assume the gtf files are listed in the file "gtflist"
+	
+	stringtie --merge gtflist > stmerge_out.gtf
 
-TACO (v)
+TACO (v0.7.3): Assume the gtf files are listed in the file "gtflist"
 
+	python taco_run.py -o taco_out gtflist
+	perl SortGTFByTid.pl taco_out/assembly.gtf > taco_out.gtf
 
 ## Commands related to simulated data set
 
