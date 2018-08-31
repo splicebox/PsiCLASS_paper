@@ -9,6 +9,8 @@ Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increas
 
 
 ### Commands of running different tools:
+PsiCLASS: Assume the bam files are in the file "bamlist"
 
-PsiCLASS:
+	"psiclass.pl --lb bamlist"
+
 

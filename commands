@@ -1,3 +1,8 @@
+# Pick the annotation for simulation
+awk '{if ($3=="exon" && $3=="transcript") print;}' ~/work/data/Gencode_v27_hg38/gencode.v27.annotation.gtf > gencode_v27.gtf
+perl chooseTxpt.pl gencode_v27.gtf > sim.gtf
+perl ExtractAnnotationFaFromGTF.pl ~/work/data/Gencode_v27_hg38/gencode.v27.transcripts.fa sim.gtf > sim_transcripts.fa
+
 
 # compare the change of genome coverage.
 paste class_01_chr2.recall classes_sample_0.recall | awk '{print $7-$3}'
