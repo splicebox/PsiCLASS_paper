@@ -11,6 +11,23 @@ Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increas
 ### Commands of running different tools:
 PsiCLASS: Assume the bam files are in the file "bamlist"
 
-	"psiclass.pl --lb bamlist"
+	psiclass.pl --lb bamlist
+
+StringTie (v1.3.3b):
+
+	stringtie ${bamfile} > stringtie_out.gtf
+
+Scallop (v0.10.2):
+
+	scallop -i ${bamfile} -o scallop_out.gtf
+
+StringTie-merge (v1.3.3b)
+
+TACO (v)
 
 
+### Commands related to simulated data set
+
+## Generate the simulated data with Polyester
+
+## Categorize the transcripts based on expression level
