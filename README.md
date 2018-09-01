@@ -8,7 +8,7 @@ Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increas
 	Copyright (C) 2018- and GNU GPL by Li Song, Liliana Florea
 
 
-## Commands for running different tools:
+## Commands for running the tools:
 PsiCLASS: Assume the bam files are listed in the file "bamlist"
 
 	psiclass --lb bamlist
@@ -42,7 +42,7 @@ STAR (v2.5.3a):
 
 Evaluation scripts for each data set are in the bash file evaluation_${dataset}.sh
 
-## Commands related to simulated data set
+## Commands related to simulated data
 
 ### Generate the simulated data with Polyester
 
@@ -77,7 +77,7 @@ Split the annotation into three categories (low, med, high)
 
 	perl SplitSimRef.pl sim_chr2.gtf max_FPK.out sim_chr2
 
-## Commands for plot
+## Commands for plotting
 
 The plots are generated through the commands in plot/plot.R. 
 
