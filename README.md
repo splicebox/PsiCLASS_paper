@@ -30,6 +30,16 @@ TACO (v0.7.3): Assume the GTF files are listed in the file "gtflist"
 	python taco_run.py -o taco_out gtflist
 	perl SortGTFByTid.pl taco_out/assembly.gtf > taco_out.gtf
 
+HISAT2 (v2.0.5): For the data set from mouse, we use the index of mm10. For the simulated data set, since the files are in fasta format, we need to add "-f" option to hisat2
+
+	hisat2 -p 6 -x ~/hg38_index/hisat2/hg38 -1 ${file1} -2 ${file2} | samtools view -b - > ${prefix}.unsorted.bam
+	samtools sort --threads 6 -m 2G -o ${prefix}.bam ${prefix}.unsorted.bam
+
+STAR (v2.5.3a):
+
+	STAR --outSAMstrandField intronMotif --runThreadN 6 --genomeDir ~/hg38_index/star/ --readFilesIn ${file1} ${file2} --outSAMtype BAM Unsorted --outFileNamePrefix ./star/sample${i}_ --readFilesCommand zcat 
+	samtools sort --threads 6 -m 2G -o star/star_${prefix}.bam star/sample${i}_Aligned.out.bam
+
 The evaluation scripts for each data set is in the bash file evaluation_${dataset}.sh
 
 ## Commands related to simulated data set
