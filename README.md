@@ -69,7 +69,9 @@ Split the annotation into three categories (low, med, high)
 
 ## Commands for plot
 
-The plots are generated through the commands in plot.R 
+The plots are generated through the commands in plot/plot.R. 
+
+The data for the plots is also in the directory plot.
 
 ## Availability of GTF files generated in the manuscript
 
