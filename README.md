@@ -49,6 +49,28 @@ Obtain Polyester through "git clone" instead of library installation in R
 
 ### Categorize the transcripts based on expression level
 
+Generate the FPK for each sample:
+
+	#!/bin/sh
+
+	for i in {01..25}
+	do
+	        echo $i
+		perl GetSimAbundance.pl sim.gtf sim_results/sample_${i}_1.fasta.gz > sim_abundance_${i}.out
+	done
+
+Get the max FPK for each sample across the samples:
+
+	perl GetHighestFPK.pl sim_abundance_out.list > max_FPK.out
+
+Split the annotation into three categories (low, med, high)
+
+	perl SplitSimRef.pl sim_chr2.gtf max_FPK.out sim_chr2
+
+## Commands for plot
+
+The plots are generated through the commands in plot.R 
+
 ## Availability of GTF files generated in the manuscript
 
 ## Availability of raw data (fasta/fastq, BAM files)
