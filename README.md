@@ -1,7 +1,7 @@
 PsiCLASS_paper
 =======
 
-Scripts and commands used in the manuscript:
+Scripts, commands and data used in the manuscript:
 
 Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increases the accuracy of transcript assembly, *Submitted*.
 
