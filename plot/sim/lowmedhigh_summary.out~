@@ -1,0 +1,15 @@
+class low 0.010152
+class med 0.558214
+class high 0.832700
+stringtie low 0.005076
+stringtie med 0.542265
+stringtie high 0.745247
+scallop low 0.022843
+scallop med 0.594896
+scallop high 0.802281
+cufflinks low 0.012690
+cufflinks med 0.531100
+cufflinks high 0.760456
+classes low 0.050761
+classes med 0.596491
+classes high 0.836502
