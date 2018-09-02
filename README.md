@@ -8,7 +8,7 @@ Song, L., Sabunciyan, S., and Florea, L. (2018). A multi-sample approach increas
 	Copyright (C) 2018- and GNU GPL by Li Song, Liliana Florea
 
 
-## Commands for running the tools:
+## Commands for running the tools
 PsiCLASS: Assume the BAM files are listed in the file "bamlist"
 
 	psiclass --lb bamlist
