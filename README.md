@@ -77,6 +77,11 @@ Split the annotation into three categories (low, med, high)
 
 	perl SplitSimRef.pl sim_chr2.gtf max_FPK.out sim_chr2
 
+#### Categorize the transcripts based on gene complexity
+
+By running command line run_SplitGTF_GeneComplexity.sh
+
+
 ## Commands for plot
 
 The plots are generated through the commands in plot/plot.R. 
